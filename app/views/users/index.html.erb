@@ -15,7 +15,7 @@
   <tr>
     <td><%= user.name %></td>
     <td><%= user.email %></td>
-    <td><%= user.provider_id %></td>
+    <td><%= Provider.find_by_id(user.provider_id).name %></td>
     <td><%= user.provider_password %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
