@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby on Rails: Welcome aboard</title>
+    <title>Electronic Medical Record - Helper</title>
     <style type="text/css" media="screen">
       body {
         margin: 0;
@@ -187,52 +187,40 @@
   </head>
   <body>
     <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
+      <div id="container">
+        <div id="providerbrower" class="content">
+          <h1>Get suppot by choosing your provider below</h1>
+          <ul>
+            <li id="meditech"><a href="meditech/"><img alt="Meditech" src="http://www.mhhealthcare.com/admin/sources/editor/assets/MEDITECH.gif" height="125" width="163" />Meditech</a></li>
+            <li id="cerner"><a href="cerner/"><img alt="Cerner" src="http://www.cerner.com/include/img/logo-cerner.gif" height="125" width="163" />Cerner</a></li>
+            <li id="mckesson"><a href="mckesson/"><img alt="McKesson" src="http://www.mckesson.com/mck/img/mckesson.png" height="125" width="163" />McKesson</a></li>
+          </ul>
+          <div class="clear"></div>
+      </div>
+
+      <div id="login" class="content">
+        <ul>
+          <h1>Login/Signup</h1>
         </ul>
       </div>
 
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
+      <div id="resources" class="content">
+        <ul>
+          <li id="videos"><a href="videos/" class='block'><img class="" src="http://www.apple.com/support/assets/images/products/home/icon_video.png" width="72" height="56" alt="" />
+            <h2>Video Tutorials</h2>
+            Watch short videos on <br> how to use EMR Helper tools.</a></li>
+        </ul>
+        <ul>
+          <li id="manuals"><a href="manuals/" class='block'><img class="" src="http://www.apple.com/support/assets/images/products/home/icon_manuals.png" width="72" height="56" alt="" />
+            <h2>Manuals</h2>
+            Learn how to setup, use, and troubleshoot your EMR Helper account and tools.</a></li>
+        </ul>
+        <ul>
+          <li id="communities"><a href="communities/" class='block'><img class="" src="http://www.apple.com/support/assets/images/products/home/icon_communities.png" width="72" height="56" alt="" />
+            <h2>Communities</h2>
+            Find and share solutions with EMR Helper users around the USA.</a></li>
+        </ul>
+        <div class="clear"></div>
       </div>
 
       <div id="footer">&nbsp;</div>
