@@ -1,4 +1,7 @@
 DemoApp::Application.routes.draw do
+  resources :transactions
+
+
   resources :providers
 
 
